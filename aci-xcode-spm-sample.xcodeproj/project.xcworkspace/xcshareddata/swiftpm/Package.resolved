@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "aci-spm-sample",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bitrise-io/aci-spm-sample",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fd64f1796a250fc12c63496e47b32d5bf575f13b"
+      }
+    }
+  ],
+  "version" : 2
+}

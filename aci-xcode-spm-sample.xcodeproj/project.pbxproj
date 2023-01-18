@@ -14,6 +14,7 @@
 		92684DDC2977767B00B148DD /* aci_xcode_spm_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92684DDB2977767B00B148DD /* aci_xcode_spm_sampleTests.swift */; };
 		92684DE62977767B00B148DD /* aci_xcode_spm_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92684DE52977767B00B148DD /* aci_xcode_spm_sampleUITests.swift */; };
 		92684DE82977767B00B148DD /* aci_xcode_spm_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92684DE72977767B00B148DD /* aci_xcode_spm_sampleUITestsLaunchTests.swift */; };
+		92684DF62977776300B148DD /* AciSpmSample in Frameworks */ = {isa = PBXBuildFile; productRef = 92684DF52977776300B148DD /* AciSpmSample */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92684DF62977776300B148DD /* AciSpmSample in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = "aci-xcode-spm-sample";
+			packageProductDependencies = (
+				92684DF52977776300B148DD /* AciSpmSample */,
+			);
 			productName = "aci-xcode-spm-sample";
 			productReference = 92684DC72977767A00B148DD /* aci-xcode-spm-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 92684DBE2977767A00B148DD;
+			packageReferences = (
+				92684DF42977776300B148DD /* XCRemoteSwiftPackageReference "aci-spm-sample" */,
+			);
 			productRefGroup = 92684DC82977767A00B148DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,6 +585,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92684DF42977776300B148DD /* XCRemoteSwiftPackageReference "aci-spm-sample" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitrise-io/aci-spm-sample";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92684DF52977776300B148DD /* AciSpmSample */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92684DF42977776300B148DD /* XCRemoteSwiftPackageReference "aci-spm-sample" */;
+			productName = AciSpmSample;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92684DBF2977767A00B148DD /* Project object */;
 }
