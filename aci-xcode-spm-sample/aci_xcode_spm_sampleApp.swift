@@ -11,7 +11,7 @@ import SwiftUI
 struct aci_xcode_spm_sampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: ViewModel())
         }
     }
 }

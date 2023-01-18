@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923E7E4C297793A7006106D2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 923E7E4B297793A7006106D2 /* RxSwift */; };
 		92684DCB2977767A00B148DD /* aci_xcode_spm_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92684DCA2977767A00B148DD /* aci_xcode_spm_sampleApp.swift */; };
 		92684DCD2977767A00B148DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92684DCC2977767A00B148DD /* ContentView.swift */; };
 		92684DCF2977767A00B148DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92684DCE2977767A00B148DD /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				923E7E4C297793A7006106D2 /* RxSwift in Frameworks */,
 				92684DF62977776300B148DD /* AciSpmSample in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +149,7 @@
 			name = "aci-xcode-spm-sample";
 			packageProductDependencies = (
 				92684DF52977776300B148DD /* AciSpmSample */,
+				923E7E4B297793A7006106D2 /* RxSwift */,
 			);
 			productName = "aci-xcode-spm-sample";
 			productReference = 92684DC72977767A00B148DD /* aci-xcode-spm-sample.app */;
@@ -222,6 +225,7 @@
 			mainGroup = 92684DBE2977767A00B148DD;
 			packageReferences = (
 				92684DF42977776300B148DD /* XCRemoteSwiftPackageReference "aci-spm-sample" */,
+				923E7E4A297793A7006106D2 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 92684DC82977767A00B148DD /* Products */;
 			projectDirPath = "";
@@ -587,6 +591,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		923E7E4A297793A7006106D2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
 		92684DF42977776300B148DD /* XCRemoteSwiftPackageReference "aci-spm-sample" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bitrise-io/aci-spm-sample";
@@ -598,6 +610,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		923E7E4B297793A7006106D2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923E7E4A297793A7006106D2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		92684DF52977776300B148DD /* AciSpmSample */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 92684DF42977776300B148DD /* XCRemoteSwiftPackageReference "aci-spm-sample" */;

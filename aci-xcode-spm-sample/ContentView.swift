@@ -7,14 +7,30 @@
 
 import SwiftUI
 import AciSpmSample
+import RxSwift
+
+class ViewModel : ObservableObject {
+    private let textObservable = AciSpmSample().messageSubject.asObservable()
+    private let bag = DisposeBag()
+    @Published var text: String = ""
+
+    init() {
+        textObservable.subscribe { [self] t in
+            text = t
+        }
+        .disposed(by: bag)
+    }
+}
 
 struct ContentView: View {
+    @ObservedObject var vm : ViewModel
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text(AciSpmSample().text)
+            Text(vm.text)
         }
         .padding()
     }
@@ -22,6 +38,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(vm: ViewModel())
     }
 }

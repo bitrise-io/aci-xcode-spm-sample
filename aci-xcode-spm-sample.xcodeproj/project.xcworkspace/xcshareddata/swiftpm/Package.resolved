@@ -6,7 +6,16 @@
       "location" : "https://github.com/bitrise-io/aci-spm-sample",
       "state" : {
         "branch" : "main",
-        "revision" : "fd64f1796a250fc12c63496e47b32d5bf575f13b"
+        "revision" : "9c3af8046b29dc6ccf3667e7b2d09330c12da4a1"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
       }
     }
   ],
